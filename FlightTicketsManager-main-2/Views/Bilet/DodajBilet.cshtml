@@ -1,0 +1,49 @@
+﻿@model ProjektObiektowe.Models.Bilet
+
+@{
+    ViewData["Title"] = "Dodaj Bilet";
+}
+
+<h1>Dodaj Bilet</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="DodajBilet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id_Lot" class="control-label">Lot</label>
+                <select asp-for="Id_Lot" class="form-control" asp-items="ViewBag.Loty"></select>
+                <span asp-validation-for="Id_Lot" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Numer" class="control-label"></label>
+                <input asp-for="Numer" class="form-control" />
+                <span asp-validation-for="Numer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cena_Klasa_1" class="control-label"></label>
+                <input asp-for="Cena_Klasa_1" class="form-control" />
+                <span asp-validation-for="Cena_Klasa_1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cena_Klasa_2" class="control-label"></label>
+                <input asp-for="Cena_Klasa_2" class="form-control" />
+                <span asp-validation-for="Cena_Klasa_2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Dodaj" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Powrót do listy</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

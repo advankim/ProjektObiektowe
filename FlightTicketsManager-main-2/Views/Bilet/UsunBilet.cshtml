@@ -1,0 +1,10 @@
+﻿@model ProjektObiektowe.Models.Bilet
+
+<h1>Usunięcie biletu</h1>
+
+<p>Czy na pewno chcesz usunąć bilet o numerze @Model.Numer?</p>
+
+<form asp-action="UsunBilet" asp-route-id="@Model.Id" method="post">
+    <input type="submit" value="Usuń" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+</form>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ProjektObiektowe.Models.Lot>
+
+<p>
+    <a asp-action="WybierzKraje" class="btn btn-primary">Dodaj nowy lot</a>
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Numer lotu</th>
+            <th>Miasto wylotu</th>
+            <th>Kraj wylotu</th>
+            <th>Data i godzina wylotu</th>
+            <th>Miasto przylotu</th>
+            <th>Kraj przylotu</th>
+            <th>Data i godzina przylotu</th>
+            <th>Numer samolotu</th>
+            <th>Akcje</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Numer)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lotnisko_Wylot.Miasto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lotnisko_Wylot.Kraj)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Czas_Wylot)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lotnisko_Przylot.Miasto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lotnisko_Przylot.Kraj)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Czas_Przylot)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Samolot.Numer)
+                </td>
+                <td>
+                    <a asp-action="EdytujKraje" asp-route-id="@item.Id">Edytuj</a> |
+                    <a asp-action="Szczegoly" asp-route-id="@item.Id">Szczegóły</a> |
+                    <a asp-action="UsunLot" asp-route-id="@item.Id">Usuń</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

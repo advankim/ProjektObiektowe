@@ -1,0 +1,21 @@
+﻿@model IEnumerable<MenedzerZakupuBiletow.Models.Rezerwacja>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Numer rezerwacji</th>
+            <th>Numer pasażera</th>
+            <th>Numer biletu</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rezerwacja in Model)
+        {
+            <tr>
+                <td>@rezerwacja.Id</td>
+                <td>@rezerwacja.Id_Pasazer</td>
+                <td>@rezerwacja.Id_Bilet</td>
+            </tr>
+        }
+    </tbody>
+</table>

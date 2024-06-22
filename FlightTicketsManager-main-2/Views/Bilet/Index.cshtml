@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ProjektObiektowe.Models.Bilet>
+
+@{
+    ViewData["Title"] = "Lista Biletów";
+}
+
+<p>
+    <a asp-action="DodajBilet" class="btn btn-primary">Dodaj Bilet</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Numer Lotu</th>
+            <th>Numer biletu</th>
+            <th>Cena Klasa 1</th>
+            <th>Cena Klasa 2</th>
+            <th>Dostępnych Klasa 1</th>
+            <th>Dostępnych Klasa 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Lot.Numer</td>
+                <td>@item.Numer</td>
+                <td>@item.Cena_Klasa_1</td>
+                <td>@item.Cena_Klasa_2</td>
+                <td>@item.Dostepnych_Klasa_1</td>
+                <td>@item.Dostepnych_Klasa_2</td>
+                <td><a asp-action="UsunBilet" asp-route-id="@item.Id">Usuń</a></td>
+                
+            </tr>
+     
+        }
+    </tbody>
+</table>
+
+
