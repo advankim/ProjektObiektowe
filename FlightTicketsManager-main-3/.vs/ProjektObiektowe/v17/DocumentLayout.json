@@ -3,6 +3,15 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\models\\samolot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\controllers\\samolotdodajcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\models\\samolotcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\views\\samolotdodaj\\dodajsamolot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -16,11 +25,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Views\\SamolotIndex\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\SamolotIndex\\Index.cshtml",
@@ -33,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "DodajSamolot.cshtml",
               "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Views\\SamolotDodaj\\DodajSamolot.cshtml",
               "RelativeDocumentMoniker": "Views\\SamolotDodaj\\DodajSamolot.cshtml",
@@ -42,6 +51,45 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-21T17:01:38.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SamolotDodajController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Controllers\\SamolotDodajController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SamolotDodajController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Controllers\\SamolotDodajController.cs",
+              "RelativeToolTip": "Controllers\\SamolotDodajController.cs",
+              "ViewState": "AQIAAAcAAACgaWZmZsY6wBgAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:43:35.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Samolot.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Models\\Samolot.cs",
+              "RelativeDocumentMoniker": "Models\\Samolot.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Models\\Samolot.cs",
+              "RelativeToolTip": "Models\\Samolot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:18:28.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SamolotContext.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Models\\SamolotContext.cs",
+              "RelativeDocumentMoniker": "Models\\SamolotContext.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Models\\SamolotContext.cs",
+              "RelativeToolTip": "Models\\SamolotContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:18:31.41Z",
               "EditorCaption": ""
             }
           ]

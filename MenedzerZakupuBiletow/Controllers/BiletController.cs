@@ -1,6 +1,8 @@
-﻿using MenedzerZakupuBiletow.Models;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MenedzerZakupuBiletow.Models;
 
 namespace MenedzerZakupuBiletow.Controllers
 {
@@ -15,89 +17,84 @@ namespace MenedzerZakupuBiletow.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var bilety = await _context.Bilety.Include(b => b.Lot).ToListAsync();
+            var bilety = await _context.Bilety.ToListAsync();
             return View(bilety);
         }
 
-        [HttpPost]
-        public IActionResult WybierzBilet(int id)
+        public async Task<IActionResult> WybierzBilet(int id)
         {
-            var bilet = _context.Bilety.Include(b => b.Lot).FirstOrDefault(b => b.Id == id);
+            var bilet = await _context.Bilety.FindAsync(id);
             if (bilet == null)
             {
                 return NotFound();
             }
 
-            var model = new WybierzBiletViewModel
+            ViewData["NumerBiletu"] = bilet.Numer;
+            ViewData["BiletId"] = bilet.Id;
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult WybierzBilet(int biletId, string klasa, string bagaz)
+        {
+            TempData["BiletId"] = biletId;
+            TempData["Klasa"] = klasa;
+            TempData["Bagaz"] = bagaz;
+
+            return RedirectToAction("WprowadzDanePasazera");
+        }
+
+        public IActionResult WprowadzDanePasazera()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> WprowadzDanePasazera(string imie, string nazwisko, int wiek, string plec, string pesel)
+        {
+            var biletId = (int)TempData["BiletId"];
+            var klasa = (string)TempData["Klasa"];
+            var bagaz = (string)TempData["Bagaz"];
+
+            var pasazer = new Pasazer
             {
-                Bilet = bilet,
-                Klasa = 1, // Domyślnie klasa 1
-                Bagaz = string.Empty
+                Imie = imie,
+                Nazwisko = nazwisko,
+                Wiek = wiek,
+                Plec = plec,
+                PESEL = pesel
             };
 
-            return View("FormularzBilet", model);
-        }
+            _context.Pasazerowie.Add(pasazer);
+            await _context.SaveChangesAsync();
 
-        [HttpPost]
-        public IActionResult WypelnijDanePasazera(WybierzBiletViewModel model)
-        {
-            if (ModelState.IsValid)
+            // Pobierz cenę biletu na podstawie wybranej klasy
+            decimal cenaBiletu = 0;
+            if (klasa == "1")
             {
-                var bilet = _context.Bilety.Include(b => b.Lot).FirstOrDefault(b => b.Id == model.Bilet.Id);
-                if (bilet == null)
-                {
-                    return NotFound();
-                }
-
-                var rezerwacjaModel = new RezerwacjaViewModel
-                {
-                    Bilet = bilet,
-                    Klasa = model.Klasa,
-                    Bagaz = model.Bagaz,
-                    Pasazer = new Pasazer()
-                };
-
-                return View("FormularzPasazer", rezerwacjaModel);
+                cenaBiletu = await _context.Bilety.Where(b => b.Id == biletId).Select(b => b.Cena_Klasa_1).FirstOrDefaultAsync();
+            }
+            else if (klasa == "2")
+            {
+                cenaBiletu = await _context.Bilety.Where(b => b.Id == biletId).Select(b => b.Cena_Klasa_2).FirstOrDefaultAsync();
             }
 
-            return View("FormularzBilet", model);
-        }
-
-        [HttpPost]
-        public IActionResult Zarezerwuj(RezerwacjaViewModel model)
-        {
-            if (ModelState.IsValid)
+            var rezerwacja = new Rezerwacja
             {
-                var pasazer = new Pasazer
-                {
-                    Imie = model.Pasazer.Imie,
-                    Nazwisko = model.Pasazer.Nazwisko,
-                    Wiek = model.Pasazer.Wiek,
-                    Plec = model.Pasazer.Plec,
-                    PESEL = model.Pasazer.PESEL
-                };
+                Id_Pasazer = pasazer.Id,
+                Id_Bilet = biletId,
+                Data = DateTime.Now.ToString(),
+                Status = "Nowa rezerwacja",
+                Cena = cenaBiletu.ToString(), // Konwersja ceny na string
+                Klasa = int.Parse(klasa),
+                Bagaz = bagaz
+            };
 
-                _context.Pasazerowie.Add(pasazer);
-                _context.SaveChanges();
+            _context.Rezerwacje.Add(rezerwacja);
+            await _context.SaveChangesAsync();
 
-                var rezerwacja = new Rezerwacja
-                {
-                    Id_Pasazer = pasazer.Id,
-                    Id_Bilet = model.Bilet.Id,
-                    Data = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
-                    Status = "Zarezerwowane",
-                    Cena = (model.Klasa == 1 ? model.Bilet.Cena_Klasa_1 : model.Bilet.Cena_Klasa_2).ToString(),
-                    Klasa = model.Klasa,
-                    Bagaz = model.Bagaz
-                };
-
-                _context.Rezerwacje.Add(rezerwacja);
-                _context.SaveChanges();
-
-                return RedirectToAction("Szczegoly", "Rezerwacja", new { id = rezerwacja.Id });
-            }
-
-            return View("FormularzPasazer", model);
+            return RedirectToAction("Index", "Rezerwacja");
         }
     }
 }
