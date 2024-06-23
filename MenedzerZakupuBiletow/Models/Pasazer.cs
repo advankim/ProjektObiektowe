@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MenedzerZakupuBiletow.Models
 {
@@ -10,7 +11,6 @@ namespace MenedzerZakupuBiletow.Models
         public int Wiek { get; set; }
         public string Plec { get; set; }
         public string PESEL { get; set; }
-        public string Bagaz { get; set; }
         public ICollection<Rezerwacja> Rezerwacje { get; set; }
     }
 }

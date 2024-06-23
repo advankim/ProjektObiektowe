@@ -1,29 +1,30 @@
 ﻿@model MenedzerZakupuBiletow.Models.Rezerwacja
 
-<h2>Szczegóły</h2>
+<h2>Details</h2>
+<p>Status rezerwacji: <b>@Model.Status</b></p>
 
-<h3>Dane pasażera</h3>
+<h4>Dane pasażera</h4>
 <p>Imię: @Model.Pasazer.Imie</p>
 <p>Nazwisko: @Model.Pasazer.Nazwisko</p>
 <p>Wiek: @Model.Pasazer.Wiek</p>
 <p>Płeć: @Model.Pasazer.Plec</p>
 <p>PESEL: @Model.Pasazer.PESEL</p>
-<p>Bagaż: @Model.Pasazer.Bagaz</p>
 
-<h3>Połączenie</h3>
+<h4>Połączenie</h4>
 <p>Numer lotu: @Model.Bilet.Lot.Numer</p>
 <p>Skąd: @Model.Bilet.Lot.LotniskoWylot.Miasto, @Model.Bilet.Lot.LotniskoWylot.Kraj</p>
 <p>Dokąd: @Model.Bilet.Lot.LotniskoPrzylot.Miasto, @Model.Bilet.Lot.LotniskoPrzylot.Kraj</p>
 <p>Data wylotu: @Model.Bilet.Lot.Czas_Wylot</p>
 <p>Data przylotu: @Model.Bilet.Lot.Czas_Przylot</p>
 
-<h3>Samolot</h3>
+<h4>Samolot</h3>
 <p>Marka: @Model.Bilet.Lot.Samolot.Marka</p>
 <p>Model: @Model.Bilet.Lot.Samolot.Model</p>
 <p>Numer: @Model.Bilet.Lot.Samolot.Numer</p>
 <p>Pojemność: @Model.Bilet.Lot.Samolot.Pojemnosc</p>
 
-<h3>Dane biletu</h3>
+<h4>Dane biletu</h4>
 <p>Numer: @Model.Bilet.Numer</p>
-<p>Cena Klasa 1: @Model.Bilet.Cena_Klasa_1</p>
-<p>Cena Klasa 2: @Model.Bilet.Cena_Klasa_2</p>
+<p>Cena: @Model.Cena</p>
+<p>Klasa: @Model.Klasa</p>
+<p>Bagaż: @Model.Bagaz</p>

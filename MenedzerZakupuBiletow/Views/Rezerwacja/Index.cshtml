@@ -6,6 +6,7 @@
             <th>Numer rezerwacji</th>
             <th>Numer pasażera</th>
             <th>Numer biletu</th>
+            <th>Status rezerwacji</th>
         </tr>
     </thead>
     <tbody>
@@ -15,7 +16,14 @@
                 <td>@rezerwacja.Id</td>
                 <td>@rezerwacja.Id_Pasazer</td>
                 <td>@rezerwacja.Id_Bilet</td>
+                <td>@rezerwacja.Status</td>
             </tr>
         }
     </tbody>
 </table>
+
+<style>
+    tr {
+        cursor: pointer;
+    }
+</style>
