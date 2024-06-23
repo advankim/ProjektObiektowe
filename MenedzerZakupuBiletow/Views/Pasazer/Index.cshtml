@@ -1,33 +1,58 @@
 ﻿@model IEnumerable<MenedzerZakupuBiletow.Models.Pasazer>
 
+@{
+    ViewData["Title"] = "Lista Pasażerów";
+}
+
+<h1>Lista Pasażerów</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Dodaj nowego Pasażera</a>
+</p>
 <table class="table">
     <thead>
         <tr>
-            <th>Numer pasażera</th>
-            <th>Imię</th>
-            <th>Nazwisko</th>
-            <th>Wiek</th>
-            <th>Płeć</th>
-            <th>Numer PESEL</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nazwisko)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wiek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plec)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PESEL)
+            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var pasazer in Model)
-        {
-            <tr onclick="location.href='@Url.Action("Rezerwacje", "Pasazer", new { id = pasazer.Id })'">
-                <td>@pasazer.Id</td>
-                <td>@pasazer.Imie</td>
-                <td>@pasazer.Nazwisko</td>
-                <td>@pasazer.Wiek</td>
-                <td>@pasazer.Plec</td>
-                <td>@pasazer.PESEL</td>
-            </tr>
+        @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nazwisko)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wiek)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Plec)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PESEL)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edytuj</a> |
+                <a asp-action="Rezerwacje" asp-route-id="@item.Id" class="btn btn-info">Rezerwacje</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>
-
-<style>
-    tr {
-        cursor: pointer;
-    }
-</style>

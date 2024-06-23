@@ -1,0 +1,53 @@
+﻿@model MenedzerZakupuBiletow.Models.Pasazer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Pasazer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div class="form-group">
+                <label asp-for="Imie" class="control-label"></label>
+                <input asp-for="Imie" class="form-control" />
+                <span asp-validation-for="Imie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nazwisko" class="control-label"></label>
+                <input asp-for="Nazwisko" class="form-control" />
+                <span asp-validation-for="Nazwisko" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wiek" class="control-label"></label>
+                <input asp-for="Wiek" class="form-control" />
+                <span asp-validation-for="Wiek" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plec" class="control-label"></label>
+                <input asp-for="Plec" class="form-control" />
+                <span asp-validation-for="Plec" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PESEL" class="control-label"></label>
+                <input asp-for="PESEL" class="form-control" />
+                <span asp-validation-for="PESEL" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
