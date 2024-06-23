@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Wybierz Bilet";
+}
+
+<h1>Wybrany bilet: @ViewData["NumerBiletu"]</h1>
+
+<form asp-action="WybierzBilet">
+    <input type="hidden" name="biletId" value="@ViewData["BiletId"]" />
+
+    <label for="klasa">Klasa:</label><br />
+    <input type="radio" id="klasa" name="klasa" value="1" checked> Klasa 1<br />
+    <input type="radio" id="klasa" name="klasa" value="2"> Klasa 2<br /><br />
+
+    <label for="bagaz">Bagaż:</label><br />
+    <input type="text" id="bagaz" name="bagaz" required><br /><br />
+
+    <input type="submit" value="Dalej">
+</form>

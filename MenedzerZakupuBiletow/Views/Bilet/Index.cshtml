@@ -1,0 +1,17 @@
+﻿@model List<MenedzerZakupuBiletow.Models.Bilet>
+
+<h1>Wybierz bilet:</h1>
+
+@foreach (var bilet in Model)
+{
+    <div>
+        <h3>Bilet numer: @bilet.Numer</h3>
+        <p>
+            Cena Klasy 1: @bilet.Cena_Klasa_1<br />
+            Cena Klasy 2: @bilet.Cena_Klasa_2<br />
+            Dostępnych Klasy 1: @bilet.Dostepnych_Klasa_1<br />
+            Dostępnych Klasy 2: @bilet.Dostepnych_Klasa_2
+        </p>
+        <a asp-action="WybierzBilet" asp-route-id="@bilet.Id">Wybierz</a>
+    </div>
+}

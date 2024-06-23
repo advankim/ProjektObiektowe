@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Wprowadź Dane Pasażera";
+}
+
+<h1>Wprowadź dane pasażera:</h1>
+
+<form asp-action="WprowadzDanePasazera">
+    <label for="imie">Imię:</label><br />
+    <input type="text" id="imie" name="imie" required><br /><br />
+
+    <label for="nazwisko">Nazwisko:</label><br />
+    <input type="text" id="nazwisko" name="nazwisko" required><br /><br />
+
+    <label for="wiek">Wiek:</label><br />
+    <input type="number" id="wiek" name="wiek" required><br /><br />
+
+    <label for="plec">Płeć:</label><br />
+    <input type="text" id="plec" name="plec" required><br /><br />
+
+    <label for="pesel">PESEL:</label><br />
+    <input type="text" id="pesel" name="pesel" required><br /><br />
+
+    <input type="submit" value="Zarezerwuj">
+</form>

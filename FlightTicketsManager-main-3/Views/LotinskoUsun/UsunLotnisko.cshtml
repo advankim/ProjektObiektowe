@@ -1,0 +1,42 @@
+﻿@model ProjektObiektowe.Models.Lotnisko
+
+@{
+    ViewData["Title"] = "Usuń Lotnisko";
+}
+
+<h3>Czy na pewno chcesz usunąć to lotnisko?</h3>
+
+<form asp-action="UsunLotnisko" asp-controller="LotniskoUsun" method="post">
+    <div>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                Kod
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Kod)
+            </dd>
+            <dt class="col-sm-2">
+                Nazwa
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nazwa)
+            </dd>
+            <dt class="col-sm-2">
+                Miasto
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Miasto)
+            </dd>
+            <dt class="col-sm-2">
+                Kraj
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Kraj)
+            </dd>
+        </dl>
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Usuń</button>
+        <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+    </div>
+</form>

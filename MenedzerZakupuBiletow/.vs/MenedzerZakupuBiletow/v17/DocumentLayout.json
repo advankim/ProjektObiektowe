@@ -3,16 +3,13 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{589DDBCB-95EE-40D6-82F3-78C4F35B2C11}|MenedzerZakupuBiletow.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\menedzerzakupubiletow\\models\\rezerwacja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{589DDBCB-95EE-40D6-82F3-78C4F35B2C11}|MenedzerZakupuBiletow.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\menedzerzakupubiletow\\views\\bilet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{589DDBCB-95EE-40D6-82F3-78C4F35B2C11}|MenedzerZakupuBiletow.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\menedzerzakupubiletow\\views\\rezerwacja\\szczegoly.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{589DDBCB-95EE-40D6-82F3-78C4F35B2C11}|MenedzerZakupuBiletow.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\menedzerzakupubiletow\\views\\bilet\\wybierzbilet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{589DDBCB-95EE-40D6-82F3-78C4F35B2C11}|MenedzerZakupuBiletow.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\menedzerzakupubiletow\\models\\rezerwacjacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{589DDBCB-95EE-40D6-82F3-78C4F35B2C11}|MenedzerZakupuBiletow.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\menedzerzakupubiletow\\views\\rezerwacja\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{589DDBCB-95EE-40D6-82F3-78C4F35B2C11}|MenedzerZakupuBiletow.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\menedzerzakupubiletow\\controllers\\kupbiletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,58 +19,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Views\\Rezerwacja\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Rezerwacja\\Index.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Views\\Rezerwacja\\Index.cshtml",
-              "RelativeToolTip": "Views\\Rezerwacja\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Views\\Bilet\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bilet\\Index.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Views\\Bilet\\Index.cshtml",
+              "RelativeToolTip": "Views\\Bilet\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T12:43:21.592Z",
+              "WhenOpened": "2024-06-23T14:15:40.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RezerwacjaContext.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Models\\RezerwacjaContext.cs",
-              "RelativeDocumentMoniker": "Models\\RezerwacjaContext.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Models\\RezerwacjaContext.cs",
-              "RelativeToolTip": "Models\\RezerwacjaContext.cs",
-              "ViewState": "AQIAAAYAAADImZmZmbkxwAcAAAAQAAAA",
+              "Title": "KupBiletController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Controllers\\KupBiletController.cs",
+              "RelativeDocumentMoniker": "Controllers\\KupBiletController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Controllers\\KupBiletController.cs",
+              "RelativeToolTip": "Controllers\\KupBiletController.cs",
+              "ViewState": "AQIAAAwAAAAA5czMzMwGwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T12:40:55.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Rezerwacja.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Models\\Rezerwacja.cs",
-              "RelativeDocumentMoniker": "Models\\Rezerwacja.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Models\\Rezerwacja.cs",
-              "RelativeToolTip": "Models\\Rezerwacja.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T12:40:08.044Z",
+              "WhenOpened": "2024-06-23T14:15:20.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Szczegoly.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Views\\Rezerwacja\\Szczegoly.cshtml",
-              "RelativeDocumentMoniker": "Views\\Rezerwacja\\Szczegoly.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Views\\Rezerwacja\\Szczegoly.cshtml",
-              "RelativeToolTip": "Views\\Rezerwacja\\Szczegoly.cshtml",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAtwBwAAAARAAAA",
+              "Title": "WybierzBilet.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Views\\Bilet\\WybierzBilet.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bilet\\WybierzBilet.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\MenedzerZakupuBiletow\\Views\\Bilet\\WybierzBilet.cshtml",
+              "RelativeToolTip": "Views\\Bilet\\WybierzBilet.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T12:37:10.027Z",
+              "WhenOpened": "2024-06-23T14:15:08.418Z",
               "EditorCaption": ""
             }
           ]

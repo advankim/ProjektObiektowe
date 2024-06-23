@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = \\Mac\Home\Desktop\ProjektObiektowe\MenedzerZakupuBiletow
 build_property._RazorSourceGeneratorDebug = 
 
+[//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Bilet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Bilet/WprowadzDanePasazera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZXRcV3Byb3dhZHpEYW5lUGFzYXplcmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Bilet/WybierzBilet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsZXRcV3liaWVyekJpbGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
