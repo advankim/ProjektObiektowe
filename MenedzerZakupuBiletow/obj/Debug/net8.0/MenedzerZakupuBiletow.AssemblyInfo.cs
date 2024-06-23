@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MenedzerZakupuBiletow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2c9ce8cf5602a08fb0a19e9faad075227692fa2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc2587fe764f7038c50e2d0a6e28469ab6602eaf")]
 [assembly: System.Reflection.AssemblyProductAttribute("MenedzerZakupuBiletow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MenedzerZakupuBiletow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,6 +9,6 @@ namespace MenedzerZakupuBiletow.Models
         {
         }
 
-        public DbSet<Pasazer> Pasażerowie { get; set; }
+        public DbSet<Pasazer> Pasazerowie { get; set; }
     }
 }

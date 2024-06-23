@@ -10,7 +10,7 @@ namespace MenedzerZakupuBiletow.Models
         }
 
         public DbSet<Rezerwacja> Rezerwacje { get; set; }
-        public DbSet<Pasazer> Pasażerowie { get; set; }
+        public DbSet<Pasazer> Pasazerowie { get; set; }
         public DbSet<Bilet> Bilety { get; set; }
         public DbSet<Lot> Loty { get; set; }
         public DbSet<Lotnisko> Lotniska { get; set; }
@@ -19,6 +19,7 @@ namespace MenedzerZakupuBiletow.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Rezerwacja>()
+                .ToTable("Rezerwacje")
                 .HasOne(r => r.Pasazer)
                 .WithMany(p => p.Rezerwacje)
                 .HasForeignKey(r => r.Id_Pasazer);

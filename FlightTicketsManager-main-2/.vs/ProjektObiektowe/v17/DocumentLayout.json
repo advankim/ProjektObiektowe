@@ -3,16 +3,13 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\views\\lotnisko\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\flightticketsmanager-main-2\\controllers\\lotniskocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\controllers\\lotniskocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\models\\lotniskocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\models\\lotnisko.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\flightticketsmanager-main-2\\models\\lotnisko.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,58 +19,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LotniskoController.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Controllers\\LotniskoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LotniskoController.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Controllers\\LotniskoController.cs",
-              "RelativeToolTip": "Controllers\\LotniskoController.cs",
-              "ViewState": "AQIAAA8AAAAA5mhmZmbGvygAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T21:57:39.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Views\\Lotnisko\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Lotnisko\\Index.cshtml",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Views\\Lotnisko\\Index.cshtml",
-              "RelativeToolTip": "Views\\Lotnisko\\Index.cshtml",
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-16T23:01:46.709Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T19:12:09.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LotniskoContext.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Models\\LotniskoContext.cs",
-              "RelativeDocumentMoniker": "Models\\LotniskoContext.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Models\\LotniskoContext.cs",
-              "RelativeToolTip": "Models\\LotniskoContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T21:56:12.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Lotnisko.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Models\\Lotnisko.cs",
               "RelativeDocumentMoniker": "Models\\Lotnisko.cs",
               "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Models\\Lotnisko.cs",
               "RelativeToolTip": "Models\\Lotnisko.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T21:09:17.874Z",
+              "WhenOpened": "2024-06-22T22:21:34.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LotniskoController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Controllers\\LotniskoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LotniskoController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-2\\Controllers\\LotniskoController.cs",
+              "RelativeToolTip": "Controllers\\LotniskoController.cs",
+              "ViewState": "AQIAABEAAACAmpmZmVkhwCgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:19:43.294Z",
               "EditorCaption": ""
             }
           ]
