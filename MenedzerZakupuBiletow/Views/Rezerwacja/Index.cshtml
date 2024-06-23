@@ -11,7 +11,7 @@
     <tbody>
         @foreach (var rezerwacja in Model)
         {
-            <tr>
+            <tr onclick="location.href='@Url.Action("Szczegoly", "Rezerwacja", new { id = rezerwacja.Id })';">
                 <td>@rezerwacja.Id</td>
                 <td>@rezerwacja.Id_Pasazer</td>
                 <td>@rezerwacja.Id_Bilet</td>

@@ -1,4 +1,4 @@
-﻿@* @model IEnumerable<MenedzerZakupuBiletow.Models.Pasazer> *@
+﻿@model IEnumerable<MenedzerZakupuBiletow.Models.Pasazer>
 
 <table class="table">
     <thead>
@@ -13,9 +13,9 @@
         </tr>
     </thead>
     <tbody>
-        @* @foreach (var pasazer in Model)
+        @foreach (var pasazer in Model)
         {
-            <tr>
+            <tr onclick="location.href='@Url.Action("Rezerwacje", "Pasazer", new { id = pasazer.Id })'">
                 <td>@pasazer.Id</td>
                 <td>@pasazer.Imie</td>
                 <td>@pasazer.Nazwisko</td>
@@ -24,6 +24,12 @@
                 <td>@pasazer.PESEL</td>
                 <td>@pasazer.Bagaz</td>
             </tr>
-        } *@
+        }
     </tbody>
 </table>
+
+<style>
+    tr {
+        cursor: pointer;
+    }
+</style>

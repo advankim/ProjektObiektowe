@@ -1,0 +1,29 @@
+﻿@model MenedzerZakupuBiletow.Models.Pasazer
+
+<h2>Rezerwacje pasażera: @Model.Imie @Model.Nazwisko</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Numer rezerwacji</th>
+            <th>Numer biletu</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rezerwacja in Model.Rezerwacje)
+        {
+            <tr onclick="location.href='@Url.Action("Szczegoly", "Rezerwacja", new { id = rezerwacja.Id })'">
+                <td>@rezerwacja.Id</td>
+                <td>@rezerwacja.Bilet.Numer</td>
+                <td>@String.Format("{0:dd-MM-yyyy}", rezerwacja.Data)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    tr {
+        cursor: pointer;
+    }
+</style>

@@ -34,8 +34,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXplclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Pasazer/Rezerwacje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXplclxSZXplcndhY2plLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Rezerwacja/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ3YWNqYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Rezerwacja/Szczegoly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ3YWNqYVxTemN6ZWdvbHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Shared/Error.cshtml]

@@ -8,7 +8,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<RezerwacjaContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("RezerwacjaContext")));
-builder.Services.AddDbContext<RezerwacjaContext>(options =>
+builder.Services.AddDbContext<PasazerContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("PasazerContext")));
 
 var app = builder.Build();

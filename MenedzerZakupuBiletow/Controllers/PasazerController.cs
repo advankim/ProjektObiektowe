@@ -12,27 +12,25 @@ namespace MenedzerZakupuBiletow.Controllers
         {
             _context = context;
         }
-       /* public IActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Imie,Nazwisko,Wiek,Plec,PESEL,Bagaz")] Pasazer pasazer)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(pasazer);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(pasazer);
-        }*/
-
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Pasazerowie.ToListAsync());
+            return View(await _context.Pasażerowie.ToListAsync());
+        }
+
+        public async Task<IActionResult> Rezerwacje(int id)
+        {
+            var pasazer = await _context.Pasażerowie
+                .Include(p => p.Rezerwacje)
+                .ThenInclude(r => r.Bilet)
+                .ThenInclude(b => b.Lot)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (pasazer == null)
+            {
+                return NotFound();
+            }
+
+            return View(pasazer);
         }
     }
 }
