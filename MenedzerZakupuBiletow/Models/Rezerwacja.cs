@@ -16,5 +16,8 @@ namespace MenedzerZakupuBiletow.Models
         public string Bagaz { get; set; }
         public Pasazer Pasazer { get; set; }
         public Bilet Bilet { get; set; }
+        public Lot Lot => Bilet?.Lot;
+        public Lotnisko LotniskoWylot => Lot?.LotniskoWylot;
+        public Lotnisko LotniskoPrzylot => Lot?.LotniskoPrzylot;
     }
 }

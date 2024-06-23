@@ -1,24 +1,44 @@
-﻿@{
-    ViewData["Title"] = "Wprowadź Dane Pasażera";
-}
+﻿<h1>Wprowadź Dane Pasażera</h1>
 
-<h1>Wprowadź dane pasażera:</h1>
-
-<form asp-action="WprowadzDanePasazera">
+<form asp-action="WprowadzDanePasazera" method="post">
     <label for="imie">Imię:</label><br />
-    <input type="text" id="imie" name="imie" required><br /><br />
+    <input type="text" id="imie" name="imie" required><br />
 
     <label for="nazwisko">Nazwisko:</label><br />
-    <input type="text" id="nazwisko" name="nazwisko" required><br /><br />
+    <input type="text" id="nazwisko" name="nazwisko" required><br />
 
     <label for="wiek">Wiek:</label><br />
-    <input type="number" id="wiek" name="wiek" required><br /><br />
+    <input type="number" id="wiek" name="wiek" required><br />
 
     <label for="plec">Płeć:</label><br />
-    <input type="text" id="plec" name="plec" required><br /><br />
+    <select id="plec" name="plec" required>
+        <option value="Mężczyzna">Mężczyzna</option>
+        <option value="Kobieta">Kobieta</option>
+    </select><br /><br />
 
     <label for="pesel">PESEL:</label><br />
-    <input type="text" id="pesel" name="pesel" required><br /><br />
+    <input type="text" id="pesel" name="pesel" required><br />
 
-    <input type="submit" value="Zarezerwuj">
+    <input type="submit" value="Zatwierdź">
 </form>
+
+@section Scripts {
+    <script>
+        document.getElementById('pesel').addEventListener('change', function () {
+            const pesel = this.value;
+
+            fetch(`/Pasazer/SprawdzPesel?pesel=${pesel}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.exists) {
+                        if (confirm('PESEL jest już w bazie. Czy chcesz uzupełnić dane tego pasażera?')) {
+                            document.getElementById('imie').value = data.imie;
+                            document.getElementById('nazwisko').value = data.nazwisko;
+                            document.getElementById('wiek').value = data.wiek;
+                            document.getElementById('plec').value = data.plec;
+                        }
+                    }
+                });
+        });
+    </script>
+}

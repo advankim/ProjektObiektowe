@@ -33,5 +33,23 @@ namespace MenedzerZakupuBiletow.Controllers
 
             return View(pasazer);
         }
+
+        public async Task<IActionResult> SprawdzPesel(string pesel)
+        {
+            var pasazer = await _context.Pasazerowie.FirstOrDefaultAsync(p => p.PESEL == pesel);
+            if (pasazer == null)
+            {
+                return Json(new { exists = false });
+            }
+
+            return Json(new
+            {
+                exists = true,
+                imie = pasazer.Imie,
+                nazwisko = pasazer.Nazwisko,
+                wiek = pasazer.Wiek,
+                plec = pasazer.Plec
+            });
+        }
     }
 }

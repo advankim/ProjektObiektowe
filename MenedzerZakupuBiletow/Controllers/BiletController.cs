@@ -57,27 +57,49 @@ namespace MenedzerZakupuBiletow.Controllers
             var klasa = (string)TempData["Klasa"];
             var bagaz = (string)TempData["Bagaz"];
 
-            var pasazer = new Pasazer
-            {
-                Imie = imie,
-                Nazwisko = nazwisko,
-                Wiek = wiek,
-                Plec = plec,
-                PESEL = pesel
-            };
+            var pasazer = await _context.Pasazerowie.FirstOrDefaultAsync(p => p.PESEL == pesel);
 
-            _context.Pasazerowie.Add(pasazer);
-            await _context.SaveChangesAsync();
+            if (pasazer == null)
+            {
+                // Dodanie nowego pasażera
+                pasazer = new Pasazer
+                {
+                    Imie = imie,
+                    Nazwisko = nazwisko,
+                    Wiek = wiek,
+                    Plec = plec,
+                    PESEL = pesel
+                };
+                _context.Pasazerowie.Add(pasazer);
+                await _context.SaveChangesAsync();
+            }
+            else
+            {
+                // Sprawdzenie zgodności danych
+                if (pasazer.Imie != imie || pasazer.Nazwisko != nazwisko || pasazer.Wiek != wiek || pasazer.Plec != plec)
+                {
+                    ModelState.AddModelError("", "Dane pasażera nie zgadzają się z danymi w bazie.");
+                    return View();
+                }
+            }
 
             // Pobierz cenę biletu na podstawie wybranej klasy
+            var bilet = await _context.Bilety.FindAsync(biletId);
+            if (bilet == null)
+            {
+                return NotFound();
+            }
+
             decimal cenaBiletu = 0;
             if (klasa == "1")
             {
-                cenaBiletu = await _context.Bilety.Where(b => b.Id == biletId).Select(b => b.Cena_Klasa_1).FirstOrDefaultAsync();
+                cenaBiletu = bilet.Cena_Klasa_1;
+                bilet.Dostepnych_Klasa_1 -= 1;
             }
             else if (klasa == "2")
             {
-                cenaBiletu = await _context.Bilety.Where(b => b.Id == biletId).Select(b => b.Cena_Klasa_2).FirstOrDefaultAsync();
+                cenaBiletu = bilet.Cena_Klasa_2;
+                bilet.Dostepnych_Klasa_2 -= 1;
             }
 
             var rezerwacja = new Rezerwacja
@@ -86,7 +108,7 @@ namespace MenedzerZakupuBiletow.Controllers
                 Id_Bilet = biletId,
                 Data = DateTime.Now.ToString(),
                 Status = "Nowa rezerwacja",
-                Cena = cenaBiletu.ToString(), // Konwersja ceny na string
+                Cena = cenaBiletu.ToString(),
                 Klasa = int.Parse(klasa),
                 Bagaz = bagaz
             };
@@ -94,7 +116,54 @@ namespace MenedzerZakupuBiletow.Controllers
             _context.Rezerwacje.Add(rezerwacja);
             await _context.SaveChangesAsync();
 
+            // Zapisz zmiany w ilości dostępnych miejsc
+            _context.Bilety.Update(bilet);
+            await _context.SaveChangesAsync();
+
             return RedirectToAction("Index", "Rezerwacja");
+        }
+
+
+        public async Task<IActionResult> GetAvailability(int biletId, int klasa)
+        {
+            var bilet = await _context.Bilety.FindAsync(biletId);
+            if (bilet == null)
+            {
+                return NotFound();
+            }
+
+            int dostepnosc = 0;
+            if (klasa == 1)
+            {
+                dostepnosc = bilet.Dostepnych_Klasa_1;
+            }
+            else if (klasa == 2)
+            {
+                dostepnosc = bilet.Dostepnych_Klasa_2;
+            }
+
+            return Json(new { dostepnosc });
+        }
+
+        public async Task<IActionResult> SprawdzDostepnosc(int biletId, int klasa)
+        {
+            var bilet = await _context.Bilety.FindAsync(biletId);
+            if (bilet == null)
+            {
+                return NotFound();
+            }
+
+            int dostepnosc = 0;
+            if (klasa == 1)
+            {
+                dostepnosc = bilet.Dostepnych_Klasa_1;
+            }
+            else if (klasa == 2)
+            {
+                dostepnosc = bilet.Dostepnych_Klasa_2;
+            }
+
+            return Json(new { dostepnosc });
         }
     }
 }

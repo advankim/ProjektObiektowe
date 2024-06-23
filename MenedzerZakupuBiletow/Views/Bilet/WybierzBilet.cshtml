@@ -1,18 +1,52 @@
-﻿@{
-    ViewData["Title"] = "Wybierz Bilet";
-}
-
-<h1>Wybrany bilet: @ViewData["NumerBiletu"]</h1>
+﻿<h1>Wybrany bilet: @ViewData["NumerBiletu"]</h1>
 
 <form asp-action="WybierzBilet">
     <input type="hidden" name="biletId" value="@ViewData["BiletId"]" />
 
     <label for="klasa">Klasa:</label><br />
-    <input type="radio" id="klasa" name="klasa" value="1" checked> Klasa 1<br />
-    <input type="radio" id="klasa" name="klasa" value="2"> Klasa 2<br /><br />
+    <input type="radio" id="klasa1" name="klasa" value="1" checked> Klasa 1<br />
+    <input type="radio" id="klasa2" name="klasa" value="2"> Klasa 2<br /><br />
 
     <label for="bagaz">Bagaż:</label><br />
-    <input type="text" id="bagaz" name="bagaz" required><br /><br />
+    <select id="bagaz" name="bagaz" required>
+        <option value="Mała torba">Mała torba</option>
+        <option value="Podręczny">Podręczny</option>
+        <option value="Rejestrowany">Rejestrowany</option>
+    </select><br /><br />
 
-    <input type="submit" value="Dalej">
+    <input type="submit" value="Dalej" id="dalejBtn">
 </form>
+
+<div id="dostepnosc"></div>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll('input[name="klasa"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+                sprawdzDostepnosc();
+            });
+        });
+
+        function sprawdzDostepnosc() {
+            const biletId = @ViewData["BiletId"];
+            const klasa = document.querySelector('input[name="klasa"]:checked').value;
+
+            fetch(`/Bilet/SprawdzDostepnosc?biletId=${biletId}&klasa=${klasa}`)
+                .then(response => response.json())
+                .then(data => {
+                    const dostepnoscDiv = document.getElementById('dostepnosc');
+                    const dalejBtn = document.getElementById('dalejBtn');
+                    if (data.dostepnosc > 0) {
+                        dostepnoscDiv.textContent = `Dostępnych miejsc: ${data.dostepnosc}`;
+                        dalejBtn.disabled = false;
+                    } else {
+                        dostepnoscDiv.textContent = 'Brak dostępnych miejsc w wybranej klasie';
+                        dalejBtn.disabled = true;
+                    }
+                });
+        }
+
+        // Initial check on page load
+        sprawdzDostepnosc();
+    </script>
+}

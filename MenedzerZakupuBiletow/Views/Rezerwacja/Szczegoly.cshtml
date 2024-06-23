@@ -1,30 +1,95 @@
 ﻿@model MenedzerZakupuBiletow.Models.Rezerwacja
 
-<h2>Details</h2>
-<p>Status rezerwacji: <b>@Model.Status</b></p>
+@{
+    ViewData["Title"] = "Szczegóły Rezerwacji";
+}
 
-<h4>Dane pasażera</h4>
-<p>Imię: @Model.Pasazer.Imie</p>
-<p>Nazwisko: @Model.Pasazer.Nazwisko</p>
-<p>Wiek: @Model.Pasazer.Wiek</p>
-<p>Płeć: @Model.Pasazer.Plec</p>
-<p>PESEL: @Model.Pasazer.PESEL</p>
+<h1>Szczegóły Rezerwacji</h1>
 
-<h4>Połączenie</h4>
-<p>Numer lotu: @Model.Bilet.Lot.Numer</p>
-<p>Skąd: @Model.Bilet.Lot.LotniskoWylot.Miasto, @Model.Bilet.Lot.LotniskoWylot.Kraj</p>
-<p>Dokąd: @Model.Bilet.Lot.LotniskoPrzylot.Miasto, @Model.Bilet.Lot.LotniskoPrzylot.Kraj</p>
-<p>Data wylotu: @Model.Bilet.Lot.Czas_Wylot</p>
-<p>Data przylotu: @Model.Bilet.Lot.Czas_Przylot</p>
+<div>
+    <h4>Rezerwacja</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Data
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Data
+        </dd>
+        <dt class="col-sm-2">
+            Status
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Status
+        </dd>
+        <dt class="col-sm-2">
+            Cena
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Cena
+        </dd>
+        <dt class="col-sm-2">
+            Klasa
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Klasa
+        </dd>
+        <dt class="col-sm-2">
+            Bagaz
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Bagaz
+        </dd>
+        <dt class="col-sm-2">
+            Samolot
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Bilet.Lot.Samolot.Marka @Model.Bilet.Lot.Samolot.Model @Model.Bilet.Lot.Samolot.Numer
+        </dd>
+        <dt class="col-sm-2">
+            Lotnisko Startowe
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Bilet.Lot.LotniskoWylot.Miasto @Model.LotniskoWylot?.Kod, @Model.Bilet.Lot.LotniskoWylot.Kraj
+        </dd>
+        <dt class="col-sm-2">
+            Lotnisko Docelowe
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Bilet.Lot.LotniskoPrzylot.Miasto @Model.LotniskoPrzylot.Kod, @Model.Bilet.Lot.LotniskoPrzylot.Kraj
+        </dd>
+        <dt class="col-sm-2">
+            Data wylotu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Bilet.Lot.Czas_Wylot
+        </dd>
+        <dt class="col-sm-2">
+            Data przylotu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Bilet.Lot.Czas_Przylot
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Powrót do listy</a>
+    <button class="btn btn-warning" onclick="anulujRezerwacje('@Model.Id')">Anuluj</button>
+    <button class="btn btn-danger" onclick="usunRezerwacje('@Model.Id')">Usuń</button>
+</div>
 
-<h4>Samolot</h3>
-<p>Marka: @Model.Bilet.Lot.Samolot.Marka</p>
-<p>Model: @Model.Bilet.Lot.Samolot.Model</p>
-<p>Numer: @Model.Bilet.Lot.Samolot.Numer</p>
-<p>Pojemność: @Model.Bilet.Lot.Samolot.Pojemnosc</p>
+@section Scripts {
+    <script>
+        function anulujRezerwacje(id) {
+            if (confirm('Czy na pewno chcesz anulować tę rezerwację?')) {
+                window.location.href = '@Url.Action("Anuluj", "Rezerwacja")/' + id;
+            }
+        }
 
-<h4>Dane biletu</h4>
-<p>Numer: @Model.Bilet.Numer</p>
-<p>Cena: @Model.Cena</p>
-<p>Klasa: @Model.Klasa</p>
-<p>Bagaż: @Model.Bagaz</p>
+        function usunRezerwacje(id) {
+            if (confirm('Czy na pewno chcesz usunąć tę rezerwację?')) {
+                window.location.href = '@Url.Action("Usun", "Rezerwacja")/' + id;
+            }
+        }
+    </script>
+}

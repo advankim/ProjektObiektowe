@@ -1,29 +1,55 @@
 ﻿@model IEnumerable<MenedzerZakupuBiletow.Models.Rezerwacja>
 
+@{
+    ViewData["Title"] = "Lista Rezerwacji";
+}
+
+<h1>Lista Rezerwacji</h1>
+
 <table class="table">
     <thead>
         <tr>
-            <th>Numer rezerwacji</th>
-            <th>Numer pasażera</th>
-            <th>Numer biletu</th>
-            <th>Status rezerwacji</th>
+            <th>Id</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Cena</th>
+            <th>Klasa</th>
+            <th>Bagaz</th>
+            <th>Akcje</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var rezerwacja in Model)
-        {
-            <tr onclick="location.href='@Url.Action("Szczegoly", "Rezerwacja", new { id = rezerwacja.Id })';">
-                <td>@rezerwacja.Id</td>
-                <td>@rezerwacja.Id_Pasazer</td>
-                <td>@rezerwacja.Id_Bilet</td>
-                <td>@rezerwacja.Status</td>
-            </tr>
-        }
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Data</td>
+            <td>@item.Status</td>
+            <td>@item.Cena</td>
+            <td>@item.Klasa</td>
+            <td>@item.Bagaz</td>
+            <td>
+                <a asp-action="Szczegoly" asp-route-id="@item.Id" class="btn btn-info">Szczegóły</a>
+                <button class="btn btn-warning" onclick="anulujRezerwacje('@item.Id')">Anuluj</button>
+                <button class="btn btn-danger" onclick="usunRezerwacje('@item.Id')">Usuń</button>
+            </td>
+        </tr>
+    }
     </tbody>
 </table>
 
-<style>
-    tr {
-        cursor: pointer;
-    }
-</style>
+@section Scripts {
+    <script>
+        function anulujRezerwacje(id) {
+            if (confirm('Czy na pewno chcesz anulować tę rezerwację?')) {
+                window.location.href = '@Url.Action("Anuluj", "Rezerwacja")/' + id;
+            }
+        }
+
+        function usunRezerwacje(id) {
+            if (confirm('Czy na pewno chcesz usunąć tę rezerwację?')) {
+                window.location.href = '@Url.Action("Usun", "Rezerwacja")/' + id;
+            }
+        }
+    </script>
+}
