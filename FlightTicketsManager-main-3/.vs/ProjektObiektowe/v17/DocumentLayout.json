@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\controllers\\lotniskododajcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\flightticketsmanager-main-3\\views\\samolotedytuj\\edytujsamolot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\models\\biletcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\flightticketsmanager-main-3\\controllers\\samolotedytujcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,32 +16,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LotniskoDodajController.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Controllers\\LotniskoDodajController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LotniskoDodajController.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Controllers\\LotniskoDodajController.cs",
-              "RelativeToolTip": "Controllers\\LotniskoDodajController.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAQwCAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "SamolotEdytujController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Controllers\\SamolotEdytujController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SamolotEdytujController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Controllers\\SamolotEdytujController.cs",
+              "RelativeToolTip": "Controllers\\SamolotEdytujController.cs",
+              "ViewState": "AQIAADQAAAAAejMzMzPzv0MAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:25:40.718Z",
+              "WhenOpened": "2024-06-23T22:40:55.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BiletContext.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Models\\BiletContext.cs",
-              "RelativeDocumentMoniker": "Models\\BiletContext.cs",
-              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Models\\BiletContext.cs",
-              "RelativeToolTip": "Models\\BiletContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:48:26.542Z",
+              "DocumentIndex": 0,
+              "Title": "EdytujSamolot.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Views\\SamolotEdytuj\\EdytujSamolot.cshtml",
+              "RelativeDocumentMoniker": "Views\\SamolotEdytuj\\EdytujSamolot.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-3\\Views\\SamolotEdytuj\\EdytujSamolot.cshtml",
+              "RelativeToolTip": "Views\\SamolotEdytuj\\EdytujSamolot.cshtml",
+              "ViewState": "AQIAABYAAAAAdDMzMzPrvzIAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T22:08:40.421Z",
               "EditorCaption": ""
             }
           ]

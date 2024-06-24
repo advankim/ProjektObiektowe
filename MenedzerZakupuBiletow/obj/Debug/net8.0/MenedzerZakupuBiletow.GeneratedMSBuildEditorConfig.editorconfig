@@ -42,8 +42,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Pasazer/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXplclxFZGl0LmNzaHRtbA==
+[//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/PasazerDelete/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXplckRlbGV0ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/PasazerEdit/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXplckVkaXRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [//Mac/Home/Desktop/ProjektObiektowe/MenedzerZakupuBiletow/Views/Pasazer/Index.cshtml]

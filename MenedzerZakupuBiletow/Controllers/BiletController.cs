@@ -17,7 +17,14 @@ namespace MenedzerZakupuBiletow.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var bilety = await _context.Bilety.ToListAsync();
+            var bilety = await _context.Bilety
+                .Include(b => b.Lot)
+                    .ThenInclude(l => l.LotniskoWylot)
+                .Include(b => b.Lot)
+                    .ThenInclude(l => l.LotniskoPrzylot)
+                .Include(b => b.Lot)
+                    .ThenInclude(l => l.Samolot)
+                .ToListAsync();
             return View(bilety);
         }
 
@@ -107,7 +114,7 @@ namespace MenedzerZakupuBiletow.Controllers
                 Id_Pasazer = pasazer.Id,
                 Id_Bilet = biletId,
                 Data = DateTime.Now.ToString(),
-                Status = "Nowa rezerwacja",
+                Status = "Aktywna",
                 Cena = cenaBiletu.ToString(),
                 Klasa = int.Parse(klasa),
                 Bagaz = bagaz

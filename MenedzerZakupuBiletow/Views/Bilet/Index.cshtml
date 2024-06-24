@@ -7,11 +7,58 @@
     <div>
         <h3>Bilet numer: @bilet.Numer</h3>
         <p>
-            Cena Klasy 1: @bilet.Cena_Klasa_1<br />
-            Cena Klasy 2: @bilet.Cena_Klasa_2<br />
-            Dostępnych Klasy 1: @bilet.Dostepnych_Klasa_1<br />
-            Dostępnych Klasy 2: @bilet.Dostepnych_Klasa_2
+            <dl class="row">
+                <dt class="col-sm-2">
+                    Data wylotu
+                </dt>
+                <dd class="col-sm-10">
+                    @bilet.Lot.Czas_Wylot
+                </dd>
+                <dt class="col-sm-2">
+                    Data wylotu
+                </dt>
+                <dd class="col-sm-10">
+                    @bilet.Lot.Czas_Przylot
+                </dd>
+                <dt class="col-sm-2">
+                    Lotnisko wylotu
+                </dt>
+                <dd class="col-sm-10">
+                    @bilet.Lot.LotniskoWylot.Nazwa @bilet.Lot.LotniskoWylot.Kod, @bilet.Lot.LotniskoWylot.Kraj
+                </dd>
+                <dt class="col-sm-2">
+                    Lotnisko przylotu
+                </dt>
+                <dd class="col-sm-10">
+                    @bilet.Lot.LotniskoPrzylot.Nazwa @bilet.Lot.LotniskoPrzylot.Kod, @bilet.Lot.LotniskoPrzylot.Kraj
+                </dd>
+                <dt class="col-sm-2">
+                    Linia lotnicza
+                </dt>
+                <dd class="col-sm-10">
+                    @bilet.Lot.Samolot.Linia
+                </dd>
+                <dt class="col-sm-2">
+                    Samolot
+                </dt>
+                <dd class="col-sm-10">
+                    @bilet.Lot.Samolot.Marka @bilet.Lot.Samolot.Model @bilet.Lot.Samolot.Numer
+                </dd>
+                <dt class="col-sm-2">
+                    1 klasa
+                </dt>
+                <dd class="col-sm-10">
+                    @bilet.Cena_Klasa_1 PLN, Zostało @bilet.Dostepnych_Klasa_1 miejsc
+                </dd>
+                <dt class="col-sm-2">
+                    2 klasa
+                </dt>
+                <dd class="col-sm-10">
+                    @bilet.Cena_Klasa_2 PLN, Zostało @bilet.Dostepnych_Klasa_2 miejsc
+                </dd>
+            </dl>
         </p>
-        <a asp-action="WybierzBilet" asp-route-id="@bilet.Id">Wybierz</a>
+        <a asp-action="WybierzBilet" asp-route-id="@bilet.Id" class="btn btn-danger">Wybierz bilet</a>
+        <hr />
     </div>
 }

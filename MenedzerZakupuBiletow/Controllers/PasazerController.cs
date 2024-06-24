@@ -18,6 +18,49 @@ namespace MenedzerZakupuBiletow.Controllers
             return View(await _context.Pasazerowie.ToListAsync());
         }
 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var pasazer = await _context.Pasazerowie
+                .Include(p => p.Rezerwacje)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (pasazer == null)
+            {
+                return NotFound();
+            }
+
+            return View(pasazer);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var pasazer = await _context.Pasazerowie
+                .Include(p => p.Rezerwacje)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+            if (pasazer == null)
+            {
+                return NotFound();
+            }
+
+            if (pasazer.Rezerwacje.Any())
+            {
+                ModelState.AddModelError(string.Empty, "Nie można usunąć pasażera, ponieważ ma przypisane rezerwacje.");
+                return View(pasazer);
+            }
+
+            _context.Pasazerowie.Remove(pasazer);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
         public async Task<IActionResult> Rezerwacje(int id)
         {
             var pasazer = await _context.Pasazerowie
@@ -32,58 +75,6 @@ namespace MenedzerZakupuBiletow.Controllers
             }
 
             return View(pasazer);
-        }
-
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var pasazer = await _context.Pasazerowie.FindAsync(id);
-            if (pasazer == null)
-            {
-                return NotFound();
-            }
-            return View(pasazer);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Imie,Nazwisko,Wiek,Plec,PESEL")] Pasazer pasazer)
-        {
-            if (id != pasazer.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(pasazer);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PasazerExists(pasazer.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(pasazer);
-        }
-
-        private bool PasazerExists(int id)
-        {
-            return _context.Pasazerowie.Any(e => e.Id == id);
         }
 
         public async Task<IActionResult> SprawdzPesel(string pesel)

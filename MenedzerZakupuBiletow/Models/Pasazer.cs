@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace MenedzerZakupuBiletow.Models
@@ -22,7 +23,7 @@ namespace MenedzerZakupuBiletow.Models
         [Required(ErrorMessage = "PESEL jest wymagany.")]
         [StringLength(11, ErrorMessage = "PESEL musi mieć 11 znaków.")]
         public string PESEL { get; set; }
-
+        [BindNever]
         public ICollection<Rezerwacja> Rezerwacje { get; set; }
     }
 }
