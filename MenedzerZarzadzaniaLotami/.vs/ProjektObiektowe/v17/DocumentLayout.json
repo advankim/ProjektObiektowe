@@ -1,0 +1,799 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\flightticketsmanager-main-4\\controllers\\lotniskoindexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lotniskoindex\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\bilet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\flightticketsmanager-main-4\\views\\samolotindex\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\samolotdodaj\\dodajsamolot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\samolotusun\\usunsamolot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\samolotusun\\bladusuwania.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lotniskousun\\usunlotnisko.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lotniskousun\\bladusuwania.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lotniskoedytuj\\edytujlotnisko.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\mac\\home\\desktop\\projektobiektowe\\flightticketsmanager-main-4\\views\\lotniskoedytuj\\bladedycji.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lotniskododaj\\dodajlotnisko.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\wybierzkraje.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\usunlot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\szczegoly.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\potwierdzenie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\edytujlot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\edytujkraje.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\dodajlot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\lot\\bladusuwania.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\bilet\\usunbilet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\bilet\\dodajbilet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\bilet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\pasazercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\pasazer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\lotniskocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\lotnisko.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\biletcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\samolot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\controllers\\lotniskousuncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\controllers\\samolotdodajcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\controllers\\lotniskododajcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\controllers\\lotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\samolotcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\samolotedytuj\\edytujsamolot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\controllers\\samolotusuncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\controllers\\samolotindexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\controllers\\samolotedytujcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\models\\rezerwacja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mbarc\\AppData\\Local\\Temp\\.vsdbgsrc\\622d696491d24353d22bf6f3b79cb1bedf5a755ab6e7ecbe8288c25a6b4354c5\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F06589F-FB07-40E9-8243-28BD71D80D75}|ProjektObiektowe.csproj|\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\projektobiektowe.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BladUsuwania.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotUsun\\BladUsuwania.cshtml",
+              "RelativeDocumentMoniker": "Views\\SamolotUsun\\BladUsuwania.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotUsun\\BladUsuwania.cshtml",
+              "RelativeToolTip": "Views\\SamolotUsun\\BladUsuwania.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T20:36:39.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsunSamolot.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotUsun\\UsunSamolot.cshtml",
+              "RelativeDocumentMoniker": "Views\\SamolotUsun\\UsunSamolot.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotUsun\\UsunSamolot.cshtml",
+              "RelativeToolTip": "Views\\SamolotUsun\\UsunSamolot.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T20:29:44.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\Index.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\Index.cshtml",
+              "RelativeToolTip": "Views\\Lot\\Index.cshtml",
+              "ViewState": "AQIAACYAAACAXGZmZmYEwAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:35:19.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotIndex\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\SamolotIndex\\Index.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotIndex\\Index.cshtml",
+              "RelativeToolTip": "Views\\SamolotIndex\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:22:13.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoIndex\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\LotniskoIndex\\Index.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoIndex\\Index.cshtml",
+              "RelativeToolTip": "Views\\LotniskoIndex\\Index.cshtml",
+              "ViewState": "AQIAABEAAACAOTMzM7MiwCgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T23:01:46.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Bilet\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bilet\\Index.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Bilet\\Index.cshtml",
+              "RelativeToolTip": "Views\\Bilet\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T15:23:54.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LotniskoIndexController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\LotniskoIndexController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LotniskoIndexController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\LotniskoIndexController.cs",
+              "RelativeToolTip": "Controllers\\LotniskoIndexController.cs",
+              "ViewState": "AQIAAAYAAACgZ2ZmZgY/wBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:25:08.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DodajSamolot.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotDodaj\\DodajSamolot.cshtml",
+              "RelativeDocumentMoniker": "Views\\SamolotDodaj\\DodajSamolot.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotDodaj\\DodajSamolot.cshtml",
+              "RelativeToolTip": "Views\\SamolotDodaj\\DodajSamolot.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T17:01:38.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsunLotnisko.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoUsun\\UsunLotnisko.cshtml",
+              "RelativeDocumentMoniker": "Views\\LotniskoUsun\\UsunLotnisko.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoUsun\\UsunLotnisko.cshtml",
+              "RelativeToolTip": "Views\\LotniskoUsun\\UsunLotnisko.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T20:10:39.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BladUsuwania.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoUsun\\BladUsuwania.cshtml",
+              "RelativeDocumentMoniker": "Views\\LotniskoUsun\\BladUsuwania.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoUsun\\BladUsuwania.cshtml",
+              "RelativeToolTip": "Views\\LotniskoUsun\\BladUsuwania.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T20:23:20.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EdytujLotnisko.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoEdytuj\\EdytujLotnisko.cshtml",
+              "RelativeDocumentMoniker": "Views\\LotniskoEdytuj\\EdytujLotnisko.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoEdytuj\\EdytujLotnisko.cshtml",
+              "RelativeToolTip": "Views\\LotniskoEdytuj\\EdytujLotnisko.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T20:11:56.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BladEdycji.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoEdytuj\\BladEdycji.cshtml",
+              "RelativeDocumentMoniker": "Views\\LotniskoEdytuj\\BladEdycji.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoEdytuj\\BladEdycji.cshtml",
+              "RelativeToolTip": "Views\\LotniskoEdytuj\\BladEdycji.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T10:27:29.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UsunLot.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\UsunLot.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\UsunLot.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\UsunLot.cshtml",
+              "RelativeToolTip": "Views\\Lot\\UsunLot.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T15:40:55.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Szczegoly.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\Szczegoly.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\Szczegoly.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\Szczegoly.cshtml",
+              "RelativeToolTip": "Views\\Lot\\Szczegoly.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T22:13:07.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Potwierdzenie.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\Potwierdzenie.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\Potwierdzenie.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\Potwierdzenie.cshtml",
+              "RelativeToolTip": "Views\\Lot\\Potwierdzenie.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T17:01:16.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EdytujLot.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\EdytujLot.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\EdytujLot.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\EdytujLot.cshtml",
+              "RelativeToolTip": "Views\\Lot\\EdytujLot.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T10:36:26.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WybierzKraje.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\WybierzKraje.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\WybierzKraje.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\WybierzKraje.cshtml",
+              "RelativeToolTip": "Views\\Lot\\WybierzKraje.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T16:57:19.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DodajLotnisko.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoDodaj\\DodajLotnisko.cshtml",
+              "RelativeDocumentMoniker": "Views\\LotniskoDodaj\\DodajLotnisko.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\LotniskoDodaj\\DodajLotnisko.cshtml",
+              "RelativeToolTip": "Views\\LotniskoDodaj\\DodajLotnisko.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T19:47:46.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EdytujKraje.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\EdytujKraje.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\EdytujKraje.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\EdytujKraje.cshtml",
+              "RelativeToolTip": "Views\\Lot\\EdytujKraje.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T10:51:50.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DodajLot.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\DodajLot.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\DodajLot.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\DodajLot.cshtml",
+              "RelativeToolTip": "Views\\Lot\\DodajLot.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T18:55:27.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BladUsuwania.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\BladUsuwania.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lot\\BladUsuwania.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Lot\\BladUsuwania.cshtml",
+              "RelativeToolTip": "Views\\Lot\\BladUsuwania.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T20:28:27.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UsunBilet.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Bilet\\UsunBilet.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bilet\\UsunBilet.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Bilet\\UsunBilet.cshtml",
+              "RelativeToolTip": "Views\\Bilet\\UsunBilet.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T18:16:00.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DodajBilet.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Bilet\\DodajBilet.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bilet\\DodajBilet.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Bilet\\DodajBilet.cshtml",
+              "RelativeToolTip": "Views\\Bilet\\DodajBilet.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-22T15:22:06.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T22:11:23.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Pasazer.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Pasazer.cs",
+              "RelativeDocumentMoniker": "Models\\Pasazer.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Pasazer.cs",
+              "RelativeToolTip": "Models\\Pasazer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:10:25.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Lotnisko.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Lotnisko.cs",
+              "RelativeDocumentMoniker": "Models\\Lotnisko.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Lotnisko.cs",
+              "RelativeToolTip": "Models\\Lotnisko.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T21:09:17.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Bilet.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Bilet.cs",
+              "RelativeDocumentMoniker": "Models\\Bilet.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Bilet.cs",
+              "RelativeToolTip": "Models\\Bilet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T14:45:41.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LotniskoUsunController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\LotniskoUsunController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LotniskoUsunController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\LotniskoUsunController.cs",
+              "RelativeToolTip": "Controllers\\LotniskoUsunController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowC8AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:26:30.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Samolot.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Samolot.cs",
+              "RelativeDocumentMoniker": "Models\\Samolot.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Samolot.cs",
+              "RelativeToolTip": "Models\\Samolot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:18:28.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BiletContext.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\BiletContext.cs",
+              "RelativeDocumentMoniker": "Models\\BiletContext.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\BiletContext.cs",
+              "RelativeToolTip": "Models\\BiletContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T14:48:26.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PasazerContext.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\PasazerContext.cs",
+              "RelativeDocumentMoniker": "Models\\PasazerContext.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\PasazerContext.cs",
+              "RelativeToolTip": "Models\\PasazerContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:10:27.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LotniskoContext.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\LotniskoContext.cs",
+              "RelativeDocumentMoniker": "Models\\LotniskoContext.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\LotniskoContext.cs",
+              "RelativeToolTip": "Models\\LotniskoContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T21:56:12.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SamolotDodajController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\SamolotDodajController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SamolotDodajController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\SamolotDodajController.cs",
+              "RelativeToolTip": "Controllers\\SamolotDodajController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:43:35.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:22:57.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LotniskoDodajController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\LotniskoDodajController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LotniskoDodajController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\LotniskoDodajController.cs",
+              "RelativeToolTip": "Controllers\\LotniskoDodajController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:25:40.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SamolotContext.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\SamolotContext.cs",
+              "RelativeDocumentMoniker": "Models\\SamolotContext.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\SamolotContext.cs",
+              "RelativeToolTip": "Models\\SamolotContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:18:31.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "LotController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\LotController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LotController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\LotController.cs",
+              "RelativeToolTip": "Controllers\\LotController.cs",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAswCMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:27:03.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SamolotUsunController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\SamolotUsunController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SamolotUsunController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\SamolotUsunController.cs",
+              "RelativeToolTip": "Controllers\\SamolotUsunController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:44:47.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SamolotIndexController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\SamolotIndexController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SamolotIndexController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\SamolotIndexController.cs",
+              "RelativeToolTip": "Controllers\\SamolotIndexController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:40:57.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SamolotEdytujController.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\SamolotEdytujController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SamolotEdytujController.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Controllers\\SamolotEdytujController.cs",
+              "RelativeToolTip": "Controllers\\SamolotEdytujController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwDIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:44:07.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EdytujSamolot.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotEdytuj\\EdytujSamolot.cshtml",
+              "RelativeDocumentMoniker": "Views\\SamolotEdytuj\\EdytujSamolot.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\SamolotEdytuj\\EdytujSamolot.cshtml",
+              "RelativeToolTip": "Views\\SamolotEdytuj\\EdytujSamolot.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T17:29:00.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-10T19:09:58.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAIwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T19:09:53.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Rezerwacja.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Rezerwacja.cs",
+              "RelativeDocumentMoniker": "Models\\Rezerwacja.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Models\\Rezerwacja.cs",
+              "RelativeToolTip": "Models\\Rezerwacja.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T13:09:32.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:39:51.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-17T21:25:01.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:27:29.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T21:51:52.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "site.css",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-10T19:10:08.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "site.js",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-14T21:06:28.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mbarc\\AppData\\Local\\Temp\\.vsdbgsrc\\622d696491d24353d22bf6f3b79cb1bedf5a755ab6e7ecbe8288c25a6b4354c5\\Program.cs",
+              "ToolTip": "C:\\Users\\mbarc\\AppData\\Local\\Temp\\.vsdbgsrc\\622d696491d24353d22bf6f3b79cb1bedf5a755ab6e7ecbe8288c25a6b4354c5\\Program.cs[Tylko do odczytu]",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAYwBoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:23:24.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ProjektObiektowe",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\ProjektObiektowe.csproj",
+              "RelativeDocumentMoniker": "ProjektObiektowe.csproj",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\ProjektObiektowe\\FlightTicketsManager-main-4\\ProjektObiektowe.csproj",
+              "RelativeToolTip": "ProjektObiektowe.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-10T19:10:02.125Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

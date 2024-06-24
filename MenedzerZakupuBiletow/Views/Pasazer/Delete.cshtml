@@ -1,0 +1,62 @@
+﻿@model MenedzerZakupuBiletow.Models.Pasazer
+
+<h1>Usuń Pasażera</h1>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<h3>Czy na pewno chcesz usunąć tego pasażera?</h3>
+<div>
+    <h4>@Model.Imie @Model.Nazwisko</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Imię
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Imie
+        </dd>
+        <dt class="col-sm-2">
+            Nazwisko
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Nazwisko
+        </dd>
+        <dt class="col-sm-2">
+            Wiek
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Wiek
+        </dd>
+        <dt class="col-sm-2">
+            Płeć
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Plec
+        </dd>
+        <dt class="col-sm-2">
+            PESEL
+        </dt>
+        <dd class="col-sm-10">
+            @Model.PESEL
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <button class="btn btn-danger" disabled>Usuń</button>
+        }
+        else
+        {
+            <input type="submit" value="Usuń" class="btn btn-danger" />
+        }
+        |
+        <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+    </form>
+</div>

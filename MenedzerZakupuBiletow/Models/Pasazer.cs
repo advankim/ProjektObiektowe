@@ -21,8 +21,9 @@ namespace MenedzerZakupuBiletow.Models
         public string Plec { get; set; }
 
         [Required(ErrorMessage = "PESEL jest wymagany.")]
-        [StringLength(11, ErrorMessage = "PESEL musi mieć 11 znaków.")]
+        [RegularExpression(@"^\d{11}$", ErrorMessage = "PESEL musi mieć dokładnie 11 cyfr.")]
         public string PESEL { get; set; }
+
         [BindNever]
         public ICollection<Rezerwacja> Rezerwacje { get; set; }
     }

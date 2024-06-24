@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model MenedzerZakupuBiletow.Models.Pasazer
+
+<h1>Wprowadź Dane Pasażera</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Imie" class="control-label"></label>
+        <input asp-for="Imie" class="form-control" />
+        <span asp-validation-for="Imie" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Nazwisko" class="control-label"></label>
+        <input asp-for="Nazwisko" class="form-control" />
+        <span asp-validation-for="Nazwisko" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Wiek" class="control-label"></label>
+        <input asp-for="Wiek" class="form-control" />
+        <span asp-validation-for="Wiek" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Plec" class="control-label"></label>
+        <select asp-for="Plec" class="form-control">
+            <option value="Mężczyzna">Mężczyzna</option>
+            <option value="Kobieta">Kobieta</option>
+        </select>
+        <span asp-validation-for="Plec" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PESEL" class="control-label"></label>
+        <input asp-for="PESEL" class="form-control" />
+        <span asp-validation-for="PESEL" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Zatwierdź</button>
+</form>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('PESEL').addEventListener('change', function () {
+            const pesel = this.value;
+
+            fetch(`/Pasazer/SprawdzPesel?pesel=${pesel}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.exists) {
+                        if (confirm('PESEL jest już w bazie. Czy chcesz uzupełnić dane tego pasażera?')) {
+                            document.getElementById('Imie').value = data.imie;
+                            document.getElementById('Nazwisko').value = data.nazwisko;
+                            document.getElementById('Wiek').value = data.wiek;
+                            document.getElementById('Plec').value = data.plec;
+                        }
+                    }
+                });
+        });
+    </script>
+}

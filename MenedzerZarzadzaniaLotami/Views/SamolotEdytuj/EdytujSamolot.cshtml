@@ -1,0 +1,52 @@
+﻿@model ProjektObiektowe.Models.Samolot
+
+@{
+    ViewData["Title"] = "Edytuj Samolot";
+}
+
+<h2>Edytuj dane samolotu</h2>
+
+<form asp-action="EdytujSamolot" asp-controller="SamolotEdytuj" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Numer" class="control-label">Numer Samolotu:</label>
+        <input asp-for="Numer" class="form-control" />
+        <span asp-validation-for="Numer" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Marka" class="control-label">Marka:</label>
+        <input asp-for="Marka" class="form-control" />
+        <span asp-validation-for="Marka" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Model" class="control-label">Model:</label>
+        <input asp-for="Model" class="form-control" />
+        <span asp-validation-for="Model" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Linia" class="control-label">Linia:</label>
+        <input asp-for="Linia" class="form-control" />
+        <span asp-validation-for="Linia" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Rzedy_Klasa_1" class="control-label">Liczba rzędów klasy 1:</label>
+        <input asp-for="Rzedy_Klasa_1" class="form-control" />
+        <span asp-validation-for="Rzedy_Klasa_1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Rzedy_Klasa_2" class="control-label">Liczba rzędów klasy 2:</label>
+        <input asp-for="Rzedy_Klasa_2" class="form-control" />
+        <span asp-validation-for="Rzedy_Klasa_2" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Zapisz zmiany</button>
+</form>
+
+<p>
+    <a asp-action="Index" asp-controller="SamolotIndex" class="btn btn-secondary">Anuluj</a>
+</p>

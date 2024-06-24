@@ -14,6 +14,7 @@ namespace MenedzerZakupuBiletow.Models
         public string Cena { get; set; }
         public int Klasa { get; set; }
         public string Bagaz { get; set; }
+        public string Numer_Miejsca { get; set; }
         public Pasazer Pasazer { get; set; }
         public Bilet Bilet { get; set; }
         public Lot Lot => Bilet?.Lot;

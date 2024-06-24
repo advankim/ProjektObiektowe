@@ -28,6 +28,7 @@ namespace MenedzerZakupuBiletow.Controllers
             return View(bilety);
         }
 
+        [HttpGet]
         public async Task<IActionResult> WybierzBilet(int id)
         {
             var bilet = await _context.Bilety.FindAsync(id);
@@ -49,8 +50,48 @@ namespace MenedzerZakupuBiletow.Controllers
             TempData["Klasa"] = klasa;
             TempData["Bagaz"] = bagaz;
 
+            return RedirectToAction("WybierzMiejsce", new { id = biletId });
+        }
+
+        public async Task<IActionResult> WybierzMiejsce(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var bilet = await _context.Bilety
+                .Include(b => b.Lot)
+                .ThenInclude(l => l.Samolot)
+                .FirstOrDefaultAsync(b => b.Id == id);
+
+            if (bilet == null)
+            {
+                return NotFound();
+            }
+
+            var samolot = bilet.Lot.Samolot;
+            var bookedSeats = await _context.Rezerwacje
+         .Where(r => r.Id_Bilet == id)
+         .Select(r => r.Numer_Miejsca)
+         .ToListAsync();
+
+            ViewBag.BookedSeats = bookedSeats;
+
+
+            return View(samolot);
+        }
+
+        [HttpPost]
+        public IActionResult WybierzMiejsce(string numerMiejsca, int id, string klasa)
+        {
+            TempData["NumerMiejsca"] = numerMiejsca;
+            TempData["BiletId"] = id; // Przekazujemy id biletu, które otrzymaliśmy z URL
+            TempData["Klasa"] = klasa;
+
             return RedirectToAction("WprowadzDanePasazera");
         }
+
 
         public IActionResult WprowadzDanePasazera()
         {
@@ -63,6 +104,7 @@ namespace MenedzerZakupuBiletow.Controllers
             var biletId = (int)TempData["BiletId"];
             var klasa = (string)TempData["Klasa"];
             var bagaz = (string)TempData["Bagaz"];
+            var numerMiejsca = (string)TempData["NumerMiejsca"];
 
             var pasazer = await _context.Pasazerowie.FirstOrDefaultAsync(p => p.PESEL == pesel);
 
@@ -114,10 +156,11 @@ namespace MenedzerZakupuBiletow.Controllers
                 Id_Pasazer = pasazer.Id,
                 Id_Bilet = biletId,
                 Data = DateTime.Now.ToString(),
-                Status = "Aktywna",
+                Status = "Aktualna",
                 Cena = cenaBiletu.ToString(),
                 Klasa = int.Parse(klasa),
-                Bagaz = bagaz
+                Bagaz = bagaz,
+                Numer_Miejsca = numerMiejsca
             };
 
             _context.Rezerwacje.Add(rezerwacja);

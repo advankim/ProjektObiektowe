@@ -17,7 +17,6 @@ namespace MenedzerZakupuBiletow.Controllers
         {
             return View(await _context.Pasazerowie.ToListAsync());
         }
-
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -27,11 +26,15 @@ namespace MenedzerZakupuBiletow.Controllers
 
             var pasazer = await _context.Pasazerowie
                 .Include(p => p.Rezerwacje)
-                .FirstOrDefaultAsync(p => p.Id == id);
-
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (pasazer == null)
             {
                 return NotFound();
+            }
+
+            if (pasazer.Rezerwacje != null && pasazer.Rezerwacje.Any())
+            {
+                ViewBag.ErrorMessage = "Nie można usunąć pasażera, który ma powiązane rezerwacje.";
             }
 
             return View(pasazer);
@@ -50,17 +53,18 @@ namespace MenedzerZakupuBiletow.Controllers
                 return NotFound();
             }
 
-            if (pasazer.Rezerwacje.Any())
+            if (pasazer.Rezerwacje == null || !pasazer.Rezerwacje.Any())
             {
-                ModelState.AddModelError(string.Empty, "Nie można usunąć pasażera, ponieważ ma przypisane rezerwacje.");
+                _context.Pasazerowie.Remove(pasazer);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "Nie można usunąć pasażera, który ma powiązane rezerwacje.";
                 return View(pasazer);
             }
-
-            _context.Pasazerowie.Remove(pasazer);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
         }
-
         public async Task<IActionResult> Rezerwacje(int id)
         {
             var pasazer = await _context.Pasazerowie
@@ -77,9 +81,41 @@ namespace MenedzerZakupuBiletow.Controllers
             return View(pasazer);
         }
 
+
+        public IActionResult WprowadzDanePasazera()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> WprowadzDanePasazera(Pasazer pasazer)
+        {
+            if (ModelState.IsValid)
+            {
+                var existingPasazer = await _context.Pasazerowie
+                    .FirstOrDefaultAsync(p => p.PESEL == pasazer.PESEL);
+
+                if (existingPasazer != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Pasażer o tym PESEL już istnieje.");
+                }
+                else
+                {
+                    _context.Add(pasazer);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            return View(pasazer);
+        }
+
+
         public async Task<IActionResult> SprawdzPesel(string pesel)
         {
-            var pasazer = await _context.Pasazerowie.FirstOrDefaultAsync(p => p.PESEL == pesel);
+            var pasazer = await _context.Pasazerowie
+                .FirstOrDefaultAsync(p => p.PESEL == pesel);
+
             if (pasazer == null)
             {
                 return Json(new { exists = false });
@@ -93,6 +129,90 @@ namespace MenedzerZakupuBiletow.Controllers
                 wiek = pasazer.Wiek,
                 plec = pasazer.Plec
             });
+        }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var pasazer = await _context.Pasazerowie.FindAsync(id);
+            if (pasazer == null)
+            {
+                return NotFound();
+            }
+            return View(pasazer);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Imie,Nazwisko,Wiek,Plec,PESEL")] Pasazer pasazer)
+        {
+            if (id != pasazer.Id)
+            {
+                return NotFound();
+            }
+
+            ModelState.Remove("Rezerwacje");
+
+            if (_context.Pasazerowie.Any(p => p.PESEL == pasazer.PESEL && p.Id != pasazer.Id))
+            {
+                ModelState.AddModelError("PESEL", "Pasażer z tym numerem PESEL już istnieje.");
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(pasazer);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!PasazerExists(pasazer.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(pasazer);
+        }
+
+        private bool PasazerExists(int id)
+        {
+            return _context.Pasazerowie.Any(e => e.Id == id);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,Imie,Nazwisko,Wiek,Plec,PESEL")] Pasazer pasazer)
+        {
+            ModelState.Remove("Rezerwacje");
+
+            if (_context.Pasazerowie.Any(p => p.PESEL == pasazer.PESEL))
+            {
+                ModelState.AddModelError("PESEL", "Pasażer z tym numerem PESEL już istnieje.");
+            }
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(pasazer);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(pasazer);
         }
     }
 }

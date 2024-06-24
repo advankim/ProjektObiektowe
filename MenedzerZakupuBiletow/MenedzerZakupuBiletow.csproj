@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Bilet\WybierzMiejsce.cshtml\**" />
+    <Content Remove="Views\Bilet\WybierzMiejsce.cshtml\**" />
+    <EmbeddedResource Remove="Views\Bilet\WybierzMiejsce.cshtml\**" />
+    <None Remove="Views\Bilet\WybierzMiejsce.cshtml\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

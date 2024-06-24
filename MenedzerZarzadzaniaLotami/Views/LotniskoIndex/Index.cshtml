@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ProjektObiektowe.Models.Lotnisko>
+
+<p>
+    <a asp-action="DodajLotnisko" asp-controller="LotniskoDodaj" class="btn btn-primary">Dodaj nowe lotnisko</a>
+</p>
+
+<form asp-action="Index" method="get">
+    <p>
+        <label>Miasto: </label>
+        <input type="text" name="searchStringMiasto" value="@ViewData["CurrentFilterMiasto"]" />
+        <input type="submit" value="Filtruj" />
+    </p>
+</form>
+
+<form asp-action="Index" method="get">
+    <p>
+        <label>Kraj: </label>
+        <input type="text" name="searchStringKraj" value="@ViewData["CurrentFilterKraj"]" />
+        <input type="submit" value="Filtruj" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrderMiasto="@ViewData["MiastoSortParam"]">@Html.DisplayNameFor(model => model.FirstOrDefault().Miasto)</a>
+                <a asp-action="Index" asp-route-sortOrderMiasto="miasto_desc"><span class="oi oi-arrow-bottom"></span></a>
+                <a asp-action="Index" asp-route-sortOrderMiasto="miasto"><span class="oi oi-arrow-top"></span></a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrderKraj="@ViewData["KrajSortParam"]">@Html.DisplayNameFor(model => model.FirstOrDefault().Kraj)</a>
+                <a asp-action="Index" asp-route-sortOrderKraj="kraj_desc"><span class="oi oi-arrow-bottom"></span></a>
+                <a asp-action="Index" asp-route-sortOrderKraj="kraj"><span class="oi oi-arrow-top"></span></a>
+            </th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Kod)</th>
+            <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Nazwa)</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var lotnisko in Model)
+        {
+            <tr>
+                <td>@lotnisko.Miasto</td>
+                <td>@lotnisko.Kraj</td>
+                <td>@lotnisko.Kod</td>
+                <td>@lotnisko.Nazwa</td>
+                <td><a asp-action="EdytujLotnisko" asp-controller="LotniskoEdytuj" asp-route-id="@lotnisko.Id">Edytuj</a></td>
+                <td><a asp-action="UsunLotnisko" asp-controller="LotniskoUsun" asp-route-id="@lotnisko.Id">Usuń</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

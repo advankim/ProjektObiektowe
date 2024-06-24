@@ -1,0 +1,232 @@
+﻿@model Samolot
+@{
+    var bookedSeats = ViewBag.BookedSeats as List<string>;
+    var selectedClass = TempData["Klasa"]?.ToString();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selection</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 14px;
+        }
+
+        .plane {
+            margin: 10px auto;
+            max-width: 600px;
+        }
+
+        .cockpit {
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            border-bottom: 5px solid #d8d8d8;
+        }
+
+            .cockpit:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 300px;
+                width: 100%;
+                border-radius: 50%;
+                border-right: 5px solid #d8d8d8;
+                border-left: 5px solid #d8d8d8;
+            }
+
+            .cockpit h1 {
+                width: 60%;
+                margin: 60px auto 25px auto;
+            }
+
+        .fuselage {
+            border-right: 5px solid #d8d8d8;
+            border-left: 5px solid #d8d8d8;
+        }
+
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .seats {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .seat {
+            flex: 0 0 14%;
+            padding: 5px;
+            position: relative;
+        }
+
+        .row--1 .seat {
+            flex: 0 0 20%;
+        }
+
+        .seat input[type=checkbox] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .seat label {
+            display: block;
+            width: 100%;
+            padding-top: 100%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.5rem;
+            background: grey;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .row--1 .seat label {
+            background: #FFD700;
+        }
+
+        .row--2 .seat label {
+            background: #00cc00;
+        }
+
+        .seat label:before {
+            content: "";
+            position: absolute;
+            width: 75%;
+            height: 75%;
+            top: 1px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            background: rgba(255, 255, 255, .4);
+            border-radius: 3px;
+        }
+
+        .seat input[type=checkbox]:checked + label {
+            background: #bada55;
+        }
+
+        .seat input[type=checkbox]:disabled + label {
+            background: #dddddd;
+            cursor: not-allowed;
+        }
+
+        .seat label.disabled {
+            opacity: 0.6;
+        }
+
+        .seat label:hover {
+            cursor: pointer;
+            box-shadow: 0 0 0px 2px #5C6AFF;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="plane">
+        <div class="cockpit">
+            <h1>Wybór Miejsca</h1>
+        </div>
+        <form asp-action="WybierzMiejsce" method="post">
+            <input type="hidden" name="klasa" value="@selectedClass" /> 
+            <ol class="cabin fuselage">
+                
+                @for (int row = 1; row <= Model.Rzedy_Klasa_1; row++)
+                {
+                    <li class="row row--1">
+                        <ol class="seats" type="A">
+                            @for (int seat = 1; seat <= 5; seat++)
+                            {
+                                if (seat == 3)
+                                {
+                                    <li class="seat">
+                                        <span style="visibility:hidden;"></span>
+                                    </li>
+                                }
+                                else
+                                {
+                                    var seatId = $"{row}{seat}";
+                                    var isBooked = bookedSeats.Contains(seatId);
+                                    var disabled = isBooked || (selectedClass == "2" && !isBooked); 
+                                    <li class="seat">
+                                        <input type="checkbox" id="@seatId" name="numerMiejsca" value="@seatId" @(disabled ? "disabled" : "") />
+                                        <label for="@seatId">@seatId</label>
+                                    </li>
+                                }
+                            }
+                        </ol>
+                    </li>
+                }
+                
+                @for (int row = 1; row <= Model.Rzedy_Klasa_2; row++)
+                {
+                    <li class="row row--2">
+                        <ol class="seats" type="A">
+                            @for (int seat = 1; seat <= 7; seat++)
+                            {
+                                if (seat == 4)
+                                {
+                                    <li class="seat">
+                                        <span style="visibility:hidden;"></span>
+                                    </li>
+                                }
+                                else
+                                {
+                                    var seatId = $"{Model.Rzedy_Klasa_1 + row}{seat}";
+                                    var isBooked = bookedSeats.Contains(seatId);
+                                    var disabled = isBooked || (selectedClass == "1" && !isBooked); 
+                                    <li class="seat">
+                                        <input type="checkbox" id="@seatId" name="numerMiejsca" value="@seatId" @(disabled ? "disabled" : "") />
+                                        <label for="@seatId">@seatId</label>
+                                    </li>
+                                }
+                            }
+                        </ol>
+                    </li>
+                }
+            </ol>
+            <button type="submit" class="btn btn-primary">Zatwierdź</button>
+        </form>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    checkboxes.forEach(function (otherCheckbox) {
+                        if (otherCheckbox !== checkbox) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
